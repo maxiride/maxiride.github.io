@@ -124,7 +124,13 @@ a:hover { color: var(--color-accent-800); }
   display: inline-flex; align-items: center; gap: 12px;
   font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; color: var(--color-text);
 }
-.brand .mark { width: 30px; height: 30px; border-radius: 999px; background: var(--sun); }
+.brand .mark { width: 30px; height: 30px; border-radius: 999px; background: var(--sun); flex-shrink: 0; }
+.brand .id { display: flex; flex-direction: column; gap: 2px; }
+.brand .role {
+  font-family: var(--font-body); font-weight: 600; font-size: 12px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--color-text) 58%, transparent);
+}
 .top .right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
 .nav-links { display: flex; align-items: center; gap: 18px; }
 .nav-links a { font-size: 14px; font-weight: 600; letter-spacing: 0.02em; }
